@@ -1,0 +1,46 @@
+FINANCAPP | TESTES UNITARIOS - REFATORACAO
+[OK] 01 - calc(2, 3, +) | esperado=5 | obtido=5
+[OK] 02 - calc(10, 4, -) | esperado=6 | obtido=6
+[OK] 03 - calc(3, 5, *) | esperado=15 | obtido=15
+[OK] 04 - calc(8, 2, /) | esperado=4 | obtido=4
+[OK] 05 - calc(8, 0, /) | esperado=0 | obtido=0
+     Feedback esperado: divisao por zero
+     Feedback obtido: Erro: divisao por zero, operação irregular
+[OK] 06 - calc(5, 5, x) | esperado=0 | obtido=0
+     Feedback esperado: Operacao invalida
+     Feedback obtido: Operacao invalida
+[OK] 07 - somar(2, 3) | esperado=5 | obtido=5
+[OK] 08 - subtrair(10, 4) | esperado=6 | obtido=6
+[OK] 09 - multiplicar(3, 5) | esperado=15 | obtido=15
+[OK] 10 - dividir(8, 2) | esperado=4 | obtido=4
+[OK] 11 - calcular(-2, -3, +) | esperado=-5 | obtido=-5
+[OK] 12 - calcular(-5, 3, -) | esperado=-8 | obtido=-8
+[OK] 13 - calcular(25, 0, *) | esperado=0 | obtido=0
+[OK] 14 - calcular(7, 2, /) | esperado=3 | obtido=3
+[OK] 15 - calcular(-7, 2, /) | esperado=-3 | obtido=-3
+[OK] 16 - somar(MAX_VALUE, 0) | esperado=2147483647 | obtido=2147483647
+[OK] 17 - calcular(8, 0, /) | esperado=IllegalArgumentException | obtido=IllegalArgumentException
+     Mensagem obtida: Divisão por zero não é permitida.
+[OK] 18 - calcular(5, 5, x) | esperado=IllegalArgumentException | obtido=IllegalArgumentException
+     Mensagem obtida: Operador inválido: x
+[OK] 19 - calcular(1, 2, null) | esperado=IllegalArgumentException | obtido=IllegalArgumentException
+     Mensagem obtida: Operador não pode ser nulo.
+[OK] 20 - calcular(1, 2, vazio) | esperado=IllegalArgumentException | obtido=IllegalArgumentException
+     Mensagem obtida: Operador inválido: 
+[OK] 21 - somar(MAX_VALUE, 1) | esperado=ArithmeticException | obtido=ArithmeticException
+     Mensagem obtida: integer overflow
+[OK] 22 - subtrair(MIN_VALUE, 1) | esperado=ArithmeticException | obtido=ArithmeticException
+     Mensagem obtida: integer overflow
+[OK] 23 - multiplicar(MAX_VALUE, 2) | esperado=ArithmeticException | obtido=ArithmeticException
+     Mensagem obtida: integer overflow
+[OK] 24 - dividir(MIN_VALUE, -1) | esperado=ArithmeticException | obtido=ArithmeticException
+     Mensagem obtida: Resultado fora do intervalo de int.
+[OK] 25 - calc(1, 2, null) | esperado=0 | obtido=0
+     Feedback esperado: Operacao invalida
+     Feedback obtido: Operacao invalida
+[OK] 26 - calc(2147483647, 1, +) | esperado=0 | obtido=0
+     Feedback esperado: fora do intervalo
+     Feedback obtido: Erro: resultado fora do intervalo de int.
+[OK] 27 - calc(20, 4, /) | esperado=5 | obtido=5
+[OK] 28 - calcular(2, 3, +) preserva r anterior | esperado=5 | obtido=5
+TOTAL: 28/28 testes aprovados | 0 falhas
