@@ -1,0 +1,9 @@
+Resultado = 5
+Resultado = 6
+Resultado = 15
+Resultado = 4
+Erro: divisao por zero, operação irregular
+Resultado = 0
+Operacao invalida
+Resultado = 0
+6/6 testes iniciais aprovados.
