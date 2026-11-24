@@ -2,7 +2,6 @@
 
 **Atividade individual**  
 **Aluno:** Gabriel Henrique Fernandes Torres  
-**RA:** 251157  
 **Curso:** Análise e Desenvolvimento de Sistemas  
 **Disciplina:** UX/UI e Testes de Software
 
